@@ -10,5 +10,5 @@ Here, you find Kontrolio's CLI homebrew formula.
 
 ```bash
 $ # (optional) brew update
-$ brew install ktrlio/tools/cli
+$ brew install ktrlio/tools/kontrolio
 ```

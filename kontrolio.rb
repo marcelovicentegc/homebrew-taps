@@ -1,15 +1,15 @@
 class Kontrolio < Formula
   desc "Time tracking through your CLI."
   homepage "https://kontrolio.com"
-  url "https://github.com/ktrlio/kontrolio-cli/releases/download/v0.0.29/kontrolio-cli_0.0.29_darwin_amd64.tar.gz"
-  sha256 "903eeaabe797df23cf9d41139982a47489ca4309ba30ff6ff01801528e5dc03f"
+  url "https://github.com/ktrlio/kontrolio-cli/releases/download/v0.0.30/kontrolio-cli_0.0.30_darwin_amd64.tar.gz"
+  sha256 "c5ea57b0527b5a85338372f88e3892b5c098e2e803fbcdbad551cf5f4f8704b2"
   license "MIT"
 
   def install
-    system "./configure", *std_configure_args, "--disable-silent-rules"
+    bin.install "kontrolio"
   end
 
   test do
-    system "false"
+    system "#{bin}/kontrolio", "--version"
   end
 end

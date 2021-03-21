@@ -1,4 +1,4 @@
-class Kontrolio < Formula
+class Cli < Formula
   desc "Time tracking through your CLI."
   homepage "https://kontrolio.com"
   url "https://github.com/ktrlio/kontrolio-cli/releases/download/v0.0.29/kontrolio-cli_0.0.29_darwin_amd64.tar.gz"

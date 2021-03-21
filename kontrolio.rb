@@ -5,13 +5,11 @@ class Kontrolio < Formula
   sha256 "903eeaabe797df23cf9d41139982a47489ca4309ba30ff6ff01801528e5dc03f"
   license "MIT"
 
-  bottle :unneeded
-
   def install
-    bin.install "kontrolio"
+    system "./configure", *std_configure_args, "--disable-silent-rules"
   end
 
   test do
-    system "#{bin}/kontrolio", "--version"
+    system "false"
   end
 end

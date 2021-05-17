@@ -1,8 +1,8 @@
 class Kontrolio < Formula
   desc "Time tracking through your CLI."
   homepage "https://github.com/marcelovicentegc/kontrolio"
-  url "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.33/kontrolio_0.0.33_darwin_amd64.tar.gz"
-  sha256 "eed289499b7e369341608eafb4843c795c67a5564ad503713bbeda0fbe78e20c"
+  url "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.34/kontrolio_0.0.34_darwin_amd64.tar.gz"
+  sha256 "556a60875012774ce194a90ed3a9b917fd8e8733a26f852635c2a6277e1b6729"
   license "MIT"
 
   def install

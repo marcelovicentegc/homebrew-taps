@@ -3,6 +3,6 @@
 ### Kontrolio
 
 ```bash
-$ # (optional) brew update
-$ brew install marcelovicentegc/taps/kontrolio
+# (optional) brew update
+brew install marcelovicentegc/taps/kontrolio
 ```

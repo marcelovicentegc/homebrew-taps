@@ -1,6 +1,6 @@
 require 'json'
 
-class ConfigProvider
+class ConfProvider
     CONFIG_DIR = File.join(File.dirname(__FILE__), "..", "bottle-configs")
 
     def initialize(name, config_file_path=nil)

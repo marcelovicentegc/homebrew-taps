@@ -1,7 +1,7 @@
-require_relative "../ConfigProvider/config_provider"
+require_relative "../ConfProvider/conf_provider"
 
 class Kontrolio < Formula
-  config_provider = ConfigProvider.new("kontrolio")
+  config_provider = ConfProvider.new("kontrolio")
 
   desc "Time tracking through your CLI."
   homepage "https://github.com/marcelovicentegc/kontrolio"

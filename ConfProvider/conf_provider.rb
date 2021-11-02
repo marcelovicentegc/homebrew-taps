@@ -52,12 +52,4 @@ class ConfProvider
     def linux_arm_hash
         @config_data['bottle']['sha256']['linux_arm']
     end
-
-    def sierra_url
-        @config_data['bottle']['url']['sierra']
-    end
-
-    def linux_url
-        @config_data['bottle']['url']['linux']
-    end
 end

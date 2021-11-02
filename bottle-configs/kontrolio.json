@@ -5,10 +5,7 @@
   "name": "kontrolio",
   "bin": "kontrolio",
   "bottle": {
-    "root_url": {
-      "sierra": "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.42/kontrolio_0.0.42_darwin_amd64.tar.gz/",
-      "linux": "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.42/kontrolio_0.0.42_darwin_amd64.tar.gz/"
-    },
+    "root_url": "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.42/",
     "sha256": {
       "sierra": "601b05b373a1f1a626cd20a84f267a53912249f51185c9a1669be854781d70ba",
       "linux": "86279133880ae2b16b4176eb5d927246de45f9b012d4dedaf2407e98b4f8ac8d"

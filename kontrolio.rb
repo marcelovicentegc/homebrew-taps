@@ -11,8 +11,8 @@ class Kontrolio < Formula
 
   bottle do
     root_url config_provider.root_url
-    sha256 cellar: :any_skip_relocation, sierra:       config_provider.sierra_hash
-    sha256 cellar: :any_skip_relocation, x86_64_linux: config_provider.linux_hash
+    sha256 sierra:       config_provider.sierra_hash
+    sha256 x86_64_linux: config_provider.linux_hash
   end
 
   def install

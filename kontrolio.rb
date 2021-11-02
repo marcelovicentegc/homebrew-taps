@@ -1,4 +1,4 @@
-require_relative "../ConfProvider/conf_provider"
+require_relative "./ConfProvider/conf_provider"
 
 class Kontrolio < Formula
   config_provider = ConfProvider.new("kontrolio")

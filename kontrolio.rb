@@ -5,13 +5,13 @@
 class Kontrolio < Formula
   desc "Time tracking through your CLI."
   homepage "https://kontrolio.com/"
-  version "0.0.51"
+  version "0.0.52"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.51/kontrolio_0.0.51_darwin_amd64.tar.gz"
-      sha256 "8de743030ef64db327051b77c77876b5ea6250ae71d90a92610d71a5ab883af7"
+      url "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.52/kontrolio_0.0.52_darwin_amd64.tar.gz"
+      sha256 "2068c7d7069cf8e26d37469196547777e0707e1d0f9f82f455a01c1f57c4bb0d"
 
       def install
         bin.install "kontrolio"
@@ -20,17 +20,17 @@ class Kontrolio < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.51/kontrolio_0.0.51_linux_amd64.tar.gz"
-      sha256 "528b6c4717b6116e5bef1b0e432d592795a30b4c51c68beb9a66ee1201558622"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.52/kontrolio_0.0.52_linux_arm64.tar.gz"
+      sha256 "2f5be7612b3a773ed0af1ee964f06acb4d19da12e01b112ef1ab03f43f630a6f"
 
       def install
         bin.install "kontrolio"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.51/kontrolio_0.0.51_linux_arm64.tar.gz"
-      sha256 "d76305e835b10295ff1a79454e337ff72150aba27c894d15e5d54c61af4452b6"
+    if Hardware::CPU.intel?
+      url "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.52/kontrolio_0.0.52_linux_amd64.tar.gz"
+      sha256 "16b85a384476cd7b461e5d075feb218203a300e0a3aadda1e2cf11ef5f3c01d4"
 
       def install
         bin.install "kontrolio"

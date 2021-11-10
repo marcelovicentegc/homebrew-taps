@@ -5,13 +5,21 @@
 class Kontrolio < Formula
   desc "Time tracking through your CLI."
   homepage "https://kontrolio.com/"
-  version "0.0.52"
+  version "0.0.53"
   license "MIT"
 
   on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.53/kontrolio_0.0.53_darwin_arm64.tar.gz"
+      sha256 "ba98769befeaf94600270b70cf6a4ca43c17fec4b66bbead69f93e0ced453f3e"
+
+      def install
+        bin.install "kontrolio"
+      end
+    end
     if Hardware::CPU.intel?
-      url "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.52/kontrolio_0.0.52_darwin_amd64.tar.gz"
-      sha256 "2068c7d7069cf8e26d37469196547777e0707e1d0f9f82f455a01c1f57c4bb0d"
+      url "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.53/kontrolio_0.0.53_darwin_amd64.tar.gz"
+      sha256 "d21f0b63524544d2a2d4849679f69318a31fa7cc1b1c744dbd0abb9b33c35535"
 
       def install
         bin.install "kontrolio"
@@ -21,16 +29,16 @@ class Kontrolio < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.52/kontrolio_0.0.52_linux_arm64.tar.gz"
-      sha256 "2f5be7612b3a773ed0af1ee964f06acb4d19da12e01b112ef1ab03f43f630a6f"
+      url "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.53/kontrolio_0.0.53_linux_arm64.tar.gz"
+      sha256 "b427f41abac25b6c48228817ffb1b197f87d9fed4075766d80be93e83428c91c"
 
       def install
         bin.install "kontrolio"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.52/kontrolio_0.0.52_linux_amd64.tar.gz"
-      sha256 "16b85a384476cd7b461e5d075feb218203a300e0a3aadda1e2cf11ef5f3c01d4"
+      url "https://github.com/marcelovicentegc/kontrolio/releases/download/v0.0.53/kontrolio_0.0.53_linux_amd64.tar.gz"
+      sha256 "4ff058f22ab318ddba411cbe79bf56cb99f8d6c782e33c5fac3f2d08e79b508f"
 
       def install
         bin.install "kontrolio"
